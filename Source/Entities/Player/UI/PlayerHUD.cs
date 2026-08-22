@@ -1,4 +1,5 @@
 using Godot;
+using NullGarel.Sandboxnator.Network;
 using NullGarel.Sandboxnator.UI;
 using NullGarel.Util.ComponentSystem;
 namespace NullGarel.Sandboxnator.Entity;
@@ -68,7 +69,9 @@ public partial class PlayerHUD : AbstractComponent<Player>, IUiSignalLoader
 
     public override void _ExitTree()
     {
+        if(!NetworkManager.Instance.HasMultiplayerPeer()) return;
         if (!IsInstanceValid(this)) return;
+        if (!IsMultiplayerAuthority()) return;
         DisconnectUISignals();
     }
 

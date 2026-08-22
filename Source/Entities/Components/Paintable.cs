@@ -3,7 +3,7 @@ using Godot.Collections;
 using NullGarel.Util.ComponentSystem;
 using NullGarel.Util.GodotHelpers;
 
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
 //[Tool]
 public partial class Paintable : AbstractComponent<Placeable>

@@ -1,6 +1,6 @@
 using System.Linq;
 using Godot;
-using NullGarel.Sandboxnator.Building;
+using NullGarel.Sandboxnator.Placeables;
 using NullGarel.Util.ComponentSystem;
 
 namespace NullGarel.Sandboxnator.Entity;

@@ -1,5 +1,5 @@
 using Godot;
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Snapper : Node3D
 {

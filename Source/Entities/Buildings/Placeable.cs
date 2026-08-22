@@ -4,7 +4,7 @@ using NullGarel.Sandboxnator.Item;
 using NullGarel.Util.ComponentSystem;
 using System.Linq;
 using NullGarel.Util.GodotHelpers;
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Placeable : RigidBody3D
 {

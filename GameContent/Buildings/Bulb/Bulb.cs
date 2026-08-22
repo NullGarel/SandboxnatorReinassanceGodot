@@ -1,4 +1,4 @@
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Bulb : Placeable
 {

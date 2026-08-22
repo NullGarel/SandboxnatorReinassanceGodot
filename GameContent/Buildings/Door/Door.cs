@@ -1,7 +1,7 @@
 using Godot;
 using NullGarel.Util.ComponentSystem;
 
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Door : AbstractComponent<Node3D>, IInteractable
 {

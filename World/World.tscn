@@ -19,10 +19,10 @@ plane = Plane(0, 0, -1, 0)
 material = ExtResource("2_2i86a")
 size = Vector2(4096, 4096)
 
-[node name="World" type="Node3D" unique_id=290800096 node_paths=PackedStringArray("_networkedEntities", "BuildingSpawner", "PlayerSpawner")]
+[node name="World" type="Node3D" unique_id=290800096 node_paths=PackedStringArray("_networkedEntities", "PlaceableSpawner", "PlayerSpawner")]
 script = ExtResource("1_53ob6")
 _networkedEntities = NodePath("NetworkedEntities")
-BuildingSpawner = NodePath("BuildingSpawner")
+PlaceableSpawner = NodePath("PlaceableSpawner")
 PlayerSpawner = NodePath("PlayerSpawner")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=742065893]
@@ -62,7 +62,7 @@ skeleton = NodePath("../../..")
 _spawnable_scenes = PackedStringArray("uid://1hsnhm80nlng")
 spawn_path = NodePath("../NetworkedEntities")
 
-[node name="BuildingSpawner" type="MultiplayerSpawner" parent="." unique_id=2065203481]
+[node name="PlaceableSpawner" type="MultiplayerSpawner" parent="." unique_id=2065203481]
 spawn_path = NodePath("../NetworkedEntities")
 
 [node name="NetworkedEntities" type="Node3D" parent="." unique_id=1549338156]

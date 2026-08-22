@@ -1,6 +1,6 @@
 using Godot;
 using Godot.Collections;
-using NullGarel.Sandboxnator.Building;
+using NullGarel.Sandboxnator.Placeables;
 using System;
 using System.Collections.Generic;
 using NullGarel.Sandboxnator.Entity;
@@ -21,48 +21,48 @@ public partial class World : Node3D
 	[Export] private Node3D _networkedEntities;
 	public Node3D NetworkedEntities => _networkedEntities;
 
-	[Export] public MultiplayerSpawner BuildingSpawner { get; private set; }
+	[Export] public MultiplayerSpawner PlaceableSpawner { get; private set; }
 	[Export] public MultiplayerSpawner PlayerSpawner { get; private set; }
 
-	private readonly HashSet<string> addedBuildingScenes = [];
+	private readonly HashSet<string> addedPlaceableScenes = [];
 
 	public override void _EnterTree()
 	{
-		AddBuildingScenesToSpawnList();
-		BuildingSpawner.SpawnFunction = new Callable(this, nameof(SpawnBuilding));
+		AddPlaceableScenesToSpawnList();
+		PlaceableSpawner.SpawnFunction = new Callable(this, nameof(SpawnPlaceable));
 	}
 
-	private void AddBuildingScenesToSpawnList()
+	private void AddPlaceableScenesToSpawnList()
 	{
 		//commit building items to the auto spawn list
-		foreach (PackedScene buildingScene in GameRegistries.Instance.BuildingRegistry.GetAllValues())
+		foreach (PackedScene placeableScene in GameRegistries.Instance.PlaceableRegistry.GetAllValues())
 		{
-			if (buildingScene == null)
+			if (placeableScene == null)
 			{
 				NcLogger.Log("Found null buildingScene!");
 				continue;
 			}
-			string resPath = buildingScene.ResourcePath;
-			if (addedBuildingScenes.Add(resPath))
+			string resPath = placeableScene.ResourcePath;
+			if (addedPlaceableScenes.Add(resPath))
 			{
-				BuildingSpawner.AddSpawnableScene(resPath);
+				PlaceableSpawner.AddSpawnableScene(resPath);
 			}
 		}
 	}
 
-	private Node SpawnBuilding(Variant data)
+	private Node SpawnPlaceable(Variant data)
 	{
-		var spawnData = DictPack.Deserialize<BuildingSpawnData>((Dictionary)data);
+		var spawnData = DictPack.Deserialize<PlaceableSpawnData>((Dictionary)data);
 
-		PackedScene scene = GameRegistries.Instance.BuildingRegistry.Get(spawnData.ItemId);
-		Placeable building = (Placeable)scene.Instantiate();
+		PackedScene scene = GameRegistries.Instance.PlaceableRegistry.Get(spawnData.ItemId);
+		Placeable placeable = (Placeable)scene.Instantiate();
 
-		building.ItemData = (PlaceableItemData)GameRegistries.Instance.ItemRegistry.Get(spawnData.ItemId);
-		building.Position = spawnData.Position;
-		building.Rotation = spawnData.Rotation;
-		building.Name = Guid.NewGuid().GetHashCode().ToString();
+		placeable.ItemData = (PlaceableItemData)GameRegistries.Instance.ItemRegistry.Get(spawnData.ItemId);
+		placeable.Position = spawnData.Position;
+		placeable.Rotation = spawnData.Rotation;
+		placeable.Name = Guid.NewGuid().GetHashCode().ToString();
 
-		return building;
+		return placeable;
 	}
 
 

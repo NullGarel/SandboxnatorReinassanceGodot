@@ -279,7 +279,7 @@ size = Vector3(1, 1, 0.2)
 [node name="PlacedCube" unique_id=1333239392 instance=ExtResource("1_co6us")]
 
 [node name="Paintable" parent="ComponentHolder" parent_id_path=PackedInt32Array(1442099316) index="0" unique_id=1874341437 node_paths=PackedStringArray("_targetMeshes")]
-_targetMeshes = [null, null, null, null, null, null]
+_targetMeshes = [NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#FrameBottom"), NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#FrameEast"), NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#FrameTop"), NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#FrameWest"), NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#LatticeHorizontal"), NodePath("../../Model/MeshInstance3D_blockbench_export_WindowFrame#LatticeVertical")]
 
 [node name="Model" parent="." index="3" unique_id=439898019]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)

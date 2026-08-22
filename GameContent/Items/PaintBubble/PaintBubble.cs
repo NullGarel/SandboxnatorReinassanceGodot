@@ -1,5 +1,5 @@
 using Godot;
-using NullGarel.Sandboxnator.Building;
+using NullGarel.Sandboxnator.Placeables;
 using NullGarel.Sandboxnator.Registry;
 using NullGarel.Util.GodotHelpers;
 using NullGarel.Util.Log;

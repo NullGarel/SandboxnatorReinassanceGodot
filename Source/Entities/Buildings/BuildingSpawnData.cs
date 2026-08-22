@@ -1,8 +1,8 @@
 using Godot;
 
-namespace NullGarel.Sandboxnator.Building;
+namespace NullGarel.Sandboxnator.Placeables;
 
-public class BuildingSpawnData
+public class PlaceableSpawnData
 {
     public string ItemId { get; set; }
     public Vector3 Position { get; set; }

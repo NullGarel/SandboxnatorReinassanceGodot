@@ -25,7 +25,7 @@ public partial class ItemRegistryManager : IRegistryManager
 					NcLogger.LogType.Register
 				);
 
-				GameRegistries.Instance.BuildingRegistry.Register(
+				GameRegistries.Instance.PlaceableRegistry.Register(
 					itemData.ItemId,
 					placingItemData.BuildingScene
 				);

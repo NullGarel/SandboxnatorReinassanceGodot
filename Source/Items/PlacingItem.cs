@@ -3,7 +3,7 @@ using Godot.Collections;
 using System;
 using NullGarel.Sandboxnator.Audio;
 using NullGarel.Sandboxnator.Entity;
-using NullGarel.Sandboxnator.Building;
+using NullGarel.Sandboxnator.Placeables;
 using NullGarel.Util.GodotHelpers;
 namespace NullGarel.Sandboxnator.Item;
 
@@ -73,14 +73,14 @@ public partial class PlacingItem : BaseItem
 		PlayerInput playerInput = ItemUser.GetComponent<PlayerInput>();
 		if (!ItemUser.isUseValid) return;
 
-		var spawnData = new BuildingSpawnData
+		var spawnData = new PlaceableSpawnData
 		{
 			ItemId = _itemData.ItemId,
 			Position = GetSnappedPosition(args.Position, args.Normal, playerInput.IsGridSnapMode),
 			Rotation = args.DesiredRotation
 		};
 
-		Node spawned = SandboxnatorMain.World.BuildingSpawner.Spawn(DictPack.Serialize(spawnData));
+		Node spawned = SandboxnatorMain.World.PlaceableSpawner.Spawn(DictPack.Serialize(spawnData));
 		PlayPlacingSound(spawnData.Position);
 	}
 
