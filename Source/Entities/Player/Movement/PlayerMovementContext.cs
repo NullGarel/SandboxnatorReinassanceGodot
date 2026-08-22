@@ -14,6 +14,9 @@ public class PlayerMovementContext
     public float SprintSpeed { get; set; }
     public float JumpVelocity { get; set; }
 
+    public bool FlyMode { get; set; }
+
+    public Vector3 Facing { get; set; }
     public Vector3 Forward => CharacterBody.GlobalTransform.Basis.Z;
     public Vector3 Right => CharacterBody.GlobalTransform.Basis.X;
 
@@ -30,6 +33,14 @@ public class PlayerMovementContext
 
         _velocity.X = direction.X * CurrentSpeed;
         _velocity.Z = direction.Z * CurrentSpeed;
+    }
+
+    public void ProcessFlightMovement(double delta)
+    {
+        Vector2 inputDir = Input.MovementVector;
+        Vector3 direction = (Facing * inputDir.Y + Right * inputDir.X).Normalized();
+
+        _velocity = direction * CurrentSpeed;
     }
 
     public void HaltHorizontalMovement()

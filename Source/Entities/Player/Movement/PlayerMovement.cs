@@ -9,7 +9,8 @@ public enum MovementState
 	Walk,
 	Sprint,
 	Jump,
-	Fall
+	Fall,
+	Fly
 }
 
 [GodotClassName("PlayerMovement")]
@@ -17,6 +18,7 @@ public partial class PlayerMovement : AbstractComponent<Player>
 {
 	[ExportCategory("Nodes")]
 	[Export] private CharacterBody3D _characterBody;
+	[Export] private Node3D _neck;
 	[ExportCategory("Movement parameters")]
 	[Export]
 	public PlayerMovementStats Stats
@@ -59,6 +61,7 @@ public partial class PlayerMovement : AbstractComponent<Player>
 		MovementType = MovementState.Idle;
 
 		_playerInput.OnStopSprint += StopSprint;
+		_playerInput.OnFly += () => { _context.FlyMode = !_context.FlyMode; };
 	}
 
 	public override void _PhysicsProcess(double delta)
@@ -85,6 +88,7 @@ public partial class PlayerMovement : AbstractComponent<Player>
 
 	private void MovementProcess(double delta)
 	{
+		_context.Facing = _neck.GlobalTransform.Basis.Z;
 		_context.SetVelocity(_characterBody.Velocity);
 
 		_stateMachine.PhysicsProcess(delta);
@@ -107,6 +111,7 @@ public partial class PlayerMovement : AbstractComponent<Player>
 		StateSprint => MovementState.Sprint,
 		StateJump => MovementState.Jump,
 		StateFall => MovementState.Fall,
+		StateFly => MovementState.Fly,
 		_ => MovementState.Idle
 	};
 }

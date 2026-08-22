@@ -524,9 +524,10 @@ shape = SubResource("CapsuleShape3D_7hef5")
 [node name="ComponentHolder" type="Node" parent="." unique_id=1298016837]
 script = ExtResource("7_kauam")
 
-[node name="PlayerMovement" type="Node3D" parent="ComponentHolder" unique_id=88819430 node_paths=PackedStringArray("_characterBody")]
+[node name="PlayerMovement" type="Node3D" parent="ComponentHolder" unique_id=88819430 node_paths=PackedStringArray("_characterBody", "_neck")]
 script = ExtResource("1_fmfn4")
 _characterBody = NodePath("../..")
+_neck = NodePath("../../Neck")
 Stats = ExtResource("9_hnsoe")
 
 [node name="CameraMovement" type="Node3D" parent="ComponentHolder" unique_id=20787505 node_paths=PackedStringArray("neck", "body")]

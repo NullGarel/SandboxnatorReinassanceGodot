@@ -11,6 +11,7 @@ public partial class PlayerInput : AbstractComponent<Player>
     public bool IsSprinting { get; private set; }
     public bool IsJumping { get; private set; }
     public event Action OnStopSprint;
+    public event Action OnFly;
     //user interface
 
     public event Action OnShowChat;
@@ -47,6 +48,7 @@ public partial class PlayerInput : AbstractComponent<Player>
     private const string MvForwardAction = "mv_forward";
     private const string MvBackwardAction = "mv_backward";
     private const string MvSprintAction = "mv_sprint";
+    private const string FlyAction = "fly";
 
     private const string BuildRotateClockwiseAction = "build_rotate_cw";
     private const string BuildRotateCounterClockwiseAction = "build_rotate_ccw";
@@ -141,6 +143,11 @@ public partial class PlayerInput : AbstractComponent<Player>
         if (Input.IsActionJustPressed(MvJumpAction))
         {
             IsJumping = true;
+        }
+
+        if (Input.IsActionJustPressed(FlyAction))
+        {
+            OnFly?.Invoke();
         }
 
         if (Input.IsActionJustReleased(MvJumpAction))
