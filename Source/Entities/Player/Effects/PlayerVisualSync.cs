@@ -45,7 +45,7 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 			_profileDataDict = value;
 			if (value != null && value.Count > 0)
 			{
-				_profileData = DictPack.Deserialize<PlayerProfileData>(value);
+				_profileData = DictPack.Unpack<PlayerProfileData>(value);
 				ApplyProfile(_profileData);
 			}
 		}
@@ -57,7 +57,7 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 		{
 			foreach (Node3D element in _elementsToHideAsFirstPerson)
 				element.Visible = false;
-			ProfileDataDict = DictPack.Serialize(PlayerProfileManager.Instance.CurrentProfile);
+			ProfileDataDict = DictPack.Pack(PlayerProfileManager.Instance.CurrentProfile);
 			_playerModel.handMesh.SetMeshClip(true);
 		}
 	}
@@ -88,7 +88,7 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 		if (_movementStateAnimation.HasAnimation("RESET"))
 		{
 			_movementStateAnimation.Play("RESET");
-			_movementStateAnimation.Advance(0); 
+			_movementStateAnimation.Advance(0);
 		}
 
 		string targetAnimation = newState switch

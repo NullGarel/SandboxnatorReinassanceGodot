@@ -77,7 +77,7 @@ public partial class PlayerItemUse : AbstractComponent<Player>
 			return;
 
 		int senderId = Multiplayer.GetRemoteSenderId();
-		int playerId = ComponentParent.componentHolder.entityId;
+		int playerId = ComponentParent.componentHolder.EntityId;
 
 		if (senderId != playerId)
 		{

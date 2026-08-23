@@ -52,7 +52,7 @@ public partial class World : Node3D
 
 	private Node SpawnPlaceable(Variant data)
 	{
-		var spawnData = DictPack.Deserialize<PlaceableSpawnData>((Dictionary)data);
+		var spawnData = DictPack.Unpack<PlaceableSpawnData>((Dictionary)data);
 
 		PackedScene scene = GameRegistries.Instance.PlaceableRegistry.Get(spawnData.ItemId);
 		Placeable placeable = (Placeable)scene.Instantiate();
@@ -99,7 +99,7 @@ public partial class World : Node3D
 	{
 		foreach (Player player in GetPlayers())
 		{
-			if (player.componentHolder.entityId == id)
+			if (player.componentHolder.EntityId == id)
 			{
 				return player;
 			}

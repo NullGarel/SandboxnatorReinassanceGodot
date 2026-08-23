@@ -23,7 +23,7 @@ public partial class PlayerManager : Singleton<PlayerManager>
 		if (Multiplayer.IsServer())
 			return;
 
-		Dictionary profileDict = DictPack.Serialize(PlayerProfileManager.Instance.CurrentProfile);
+		Dictionary profileDict = DictPack.Pack(PlayerProfileManager.Instance.CurrentProfile);
 		RpcId(1, nameof(ServerBoundHandshake), profileDict);
 	}
 
@@ -194,7 +194,7 @@ public partial class PlayerManager : Singleton<PlayerManager>
 		if (!Multiplayer.IsServer()) return;
 
 		int remoteId = Multiplayer.GetRemoteSenderId();
-		PlayerProfileData profileData = DictPack.Deserialize<PlayerProfileData>(profileDict);
+		PlayerProfileData profileData = DictPack.Unpack<PlayerProfileData>(profileDict);
 
 		AddPlayer(remoteId);
 

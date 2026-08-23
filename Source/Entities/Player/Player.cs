@@ -22,8 +22,8 @@ public partial class Player : CharacterBody3D
 
 	public override void _EnterTree()
 	{
-		componentHolder.entityId = int.Parse(Name);
-		SetMultiplayerAuthority(componentHolder.entityId);
+		componentHolder.EntityId = int.Parse(Name);
+		SetMultiplayerAuthority(componentHolder.EntityId);
 
 		if (IsMultiplayerAuthority())
 		{

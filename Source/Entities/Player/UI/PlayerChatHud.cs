@@ -93,7 +93,7 @@ public partial class PlayerChatHud : AbstractComponent<Player>
             _messageBox.Text += computedText;
 
             //I personally thinks it's completely useless to make your own message you wrote yourself visible to yourself, idk, might be revisited.
-            if (message.PlayerId != ComponentParent.componentHolder.entityId)
+            if (message.PlayerId != ComponentParent.componentHolder.EntityId)
                 LatestMessage = computedText;
         }
         else

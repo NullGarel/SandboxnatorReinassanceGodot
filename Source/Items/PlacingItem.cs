@@ -80,7 +80,7 @@ public partial class PlacingItem : BaseItem
 			Rotation = args.DesiredRotation
 		};
 
-		Node spawned = SandboxnatorMain.World.PlaceableSpawner.Spawn(DictPack.Serialize(spawnData));
+		Node spawned = SandboxnatorMain.World.PlaceableSpawner.Spawn(DictPack.Pack(spawnData));
 		PlayPlacingSound(spawnData.Position);
 	}
 

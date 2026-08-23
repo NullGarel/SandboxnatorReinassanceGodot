@@ -65,7 +65,7 @@ public class CommandRegistryManager : IRegistryManager
 
     private static bool SendInvalidCommandWarning(string commandKeyName, Player sender)
     {
-        ChatManager.Instance.SendPlayerlessMessage($"Unknown command or invalid arguments when attempting to execute: {commandKeyName}, try typing \"!help\" in order to see available in-game commands and their respective usage instructions.", sender.componentHolder.entityId);
+        ChatManager.Instance.SendPlayerlessMessage($"Unknown command or invalid arguments when attempting to execute: {commandKeyName}, try typing \"!help\" in order to see available in-game commands and their respective usage instructions.", sender.componentHolder.EntityId);
         //Seems counterintuitive, but returnig true means that there was an attempt, not necessarily success.
         return true;
     }

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://3cddvy6kepw6"]
+
+[ext_resource type="Script" uid="uid://bwanqa0rt1fdi" path="res://Source/Common/Util/GodotHelpers/DictPackStressTest.cs" id="1_x3wc0"]
+
+[node name="DictPackStressTest" type="Node" unique_id=1143793712]
+script = ExtResource("1_x3wc0")
+metadata/_custom_type_script = "uid://bwanqa0rt1fdi"

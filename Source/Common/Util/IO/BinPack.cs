@@ -1,3 +1,9 @@
+/*
+*   2025????????
+*   DISCLAIMER: CLANKER GENERATED. POTENTIALLY SLOPPY CODE.
+*   AGENT: ChatGPT probably
+*/
+
 using MessagePack;
 using MessagePack.Resolvers;
 using MessagePackGodot;
@@ -10,7 +16,6 @@ namespace NullGarel.Util.IO;
 /// </summary>
 public static class BinPack
 {
-    //Had to use AI for this one, the MessagePackGodot is great but it has no god damn documentation.
     private static readonly MessagePackSerializerOptions _options =
         MessagePackSerializerOptions.Standard.WithResolver(
             CompositeResolver.Create(

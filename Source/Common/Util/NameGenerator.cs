@@ -2,7 +2,11 @@ using System;
 using Godot.Collections;
 namespace NullGarel.Util;
 
-//Warning that this class was AI generated, I need not to state the reason why.
+/*
+*   2025????????
+*   DISCLAIMER: CLANKER GENERATED. POTENTIALLY SLOPPY CODE.
+*   AGENT: ChatGPT probably
+*/
 public class NameGenerator
 {
     private Array<string> _nameBeginnings;

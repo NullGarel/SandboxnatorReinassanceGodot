@@ -8,7 +8,7 @@ public class CommandContext
     public string CommandName { get; }
     public string[] Args { get; }
     public Player Sender;
-    public int SenderId => Sender?.componentHolder.entityId ?? -1;
+    public int SenderId => Sender?.componentHolder.EntityId ?? -1;
 
     public CommandContext(string rawInput, string commandName, string[] args, Player sender)
     {
