@@ -1,13 +1,15 @@
 using Godot;
 using NullGarel.Util.ComponentSystem;
+using NullGarel.Util.GodotHelpers;
 
 namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Door : AbstractComponent<Node3D>, IInteractable
 {
 
-    //WARNING: door specific.
     private bool _isOpen = false;
+
+    [Packable]
     [Export]
     public bool IsOpen
     {

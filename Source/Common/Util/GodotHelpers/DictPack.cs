@@ -1,3 +1,6 @@
+// CLANKER GENERATED. POTENTIALLY SLOPPY CODE.
+// Generated: 202608231931
+// Agent/model: Claude (Sonnet 5, claude.ai)
 using System;
 using System.Collections;
 using System.Collections.Concurrent;
@@ -10,6 +13,20 @@ using Array = Godot.Collections.Array;
 namespace NullGarel.Util.GodotHelpers;
 
 /// <summary>
+/// Marks a property as part of the wire format on a GodotObject-derived type (Node, Resource,
+/// etc). For those types DictPack is opt-in, not opt-out - a property without this attribute is
+/// never touched by Pack/Unpack. This matters because a Node/Resource's public settable-property
+/// surface has nothing to do with your data model (Owner, Name, ProcessMode, ResourcePath...),
+/// and Owner in particular can drag in a reference back to the whole scene subtree, recursively.
+/// Plain POCO DTOs (not GodotObject-derived) don't need this - every public settable property on
+/// those is included automatically, same as before.
+/// </summary>
+[AttributeUsage(AttributeTargets.Property)]
+public sealed class PackableAttribute : Attribute
+{
+}
+
+/// <summary>
 /// Reflection-based serializer/deserializer between plain C# DTOs and Godot.Collections.Dictionary.
 /// Intended to replace the old legacy msgpack approach <see cref="IO.BinPack"/>.
 /// </summary>
@@ -20,10 +37,28 @@ public static class DictPack
 
     private static PropertyInfo[] GetProperties(Type type)
     {
-        return PropertyCache.GetOrAdd(type, t => System.Array.FindAll(
-            t.GetProperties(BindingFlags.Public | BindingFlags.Instance),
-            // Skip indexers and write-only/read-only props - SetValue/GetValue would throw on them.
-            p => p.CanRead && p.CanWrite && p.GetIndexParameters().Length == 0));
+        return PropertyCache.GetOrAdd(type, BuildPropertyList);
+    }
+
+    private static PropertyInfo[] BuildPropertyList(Type type)
+    {
+        // Skip indexers and write-only/read-only props - SetValue/GetValue would throw on them.
+        var candidates = System.Array.FindAll(
+            type.GetProperties(BindingFlags.Public | BindingFlags.Instance),
+            p => p.CanRead && p.CanWrite && p.GetIndexParameters().Length == 0);
+
+        // GodotObject-derived types (Node, Resource, and everything that inherits from them,
+        // which covers components) have a public surface area that's mostly Godot engine
+        // plumbing, not your data model - require explicit [Packable] opt-in for those. Plain
+        // POCO DTOs keep the original opt-out behavior: everything settable is included by
+        // default, since that's the whole point of writing a small DTO by hand.
+        if (typeof(GodotObject).IsAssignableFrom(type))
+        {
+            candidates = System.Array.FindAll(candidates,
+                p => p.IsDefined(typeof(PackableAttribute), inherit: true));
+        }
+
+        return candidates;
     }
 
     /// <summary>
@@ -32,6 +67,16 @@ public static class DictPack
     public static Dictionary Pack<T>(T data) where T : class
     {
         return data == null ? new Dictionary() : SerializeObject(data, typeof(T));
+    }
+
+    /// <summary>
+    /// Same as <see cref="Pack{T}"/>, but for when the concrete type is only known at runtime
+    /// (e.g. serializing a polymorphic component where you have the instance's Type, not a
+    /// compile-time generic argument).
+    /// </summary>
+    public static Dictionary Pack(object data, Type type)
+    {
+        return data == null ? new Dictionary() : SerializeObject(data, type);
     }
 
     private static Dictionary SerializeObject(object data, Type type)
@@ -49,6 +94,20 @@ public static class DictPack
         return dict;
     }
 
+    public static Array SerializeList(IEnumerable items)
+    {
+        var arr = new Array();
+        if (items == null) return arr;
+
+        foreach (var item in items)
+        {
+            if (item == null) continue;
+            arr.Add(ObjectToVariant(item));
+        }
+
+        return arr;
+    }
+
     private static Variant ObjectToVariant(object val)
     {
         switch (val)
@@ -63,7 +122,7 @@ public static class DictPack
             case Vector2 v2: return Variant.From(v2);
             case Vector3 v3: return Variant.From(v3);
             case Enum e:
-                // Store enums as their underlying integral value; Deserialize re-hydrates them.
+                // Store enums as their underlying integral value; Unpack re-hydrates them.
                 return Variant.From(Convert.ToInt64(e));
         }
 
@@ -104,6 +163,16 @@ public static class DictPack
     {
         if (dict == null || dict.Count == 0) return new T();
         return (T)DeserializeObject(dict, typeof(T));
+    }
+
+    /// <summary>
+    /// Same as <see cref="Unpack{T}"/>, but for when the target type is only known at runtime.
+    /// Caller is responsible for casting the result to the expected type.
+    /// </summary>
+    public static object Unpack(Dictionary dict, Type type)
+    {
+        if (dict == null || dict.Count == 0) return Activator.CreateInstance(type);
+        return DeserializeObject(dict, type);
     }
 
     private static object DeserializeObject(Dictionary dict, Type type)

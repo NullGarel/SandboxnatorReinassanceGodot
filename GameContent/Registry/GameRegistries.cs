@@ -8,6 +8,8 @@ using NullGarel.Util.Log;
 using NullGarel.Util.GodotHelpers;
 using NullGarel.Sandboxnator.Entity.PlayerCosmetics;
 using NullGarel.Util.IO;
+using NullGarel.Sandboxnator.Data;
+using System.Reflection;
 namespace NullGarel.Sandboxnator.Registry;
 
 /// <summary>
@@ -85,6 +87,7 @@ public partial class GameRegistries : Singleton<GameRegistries>
 
     private void InitializeRegistries()
     {
+        ComponentRegistry.AutoRegisterAll(Assembly.GetCallingAssembly());
         ItemRegistryManager itemRegistryManager = new();
         itemRegistryManager.Register();
         CommandRegistryManager commandRegistryManager = new();

@@ -161,7 +161,7 @@ public partial class DictPackStressTest : Node
     {
         Check("List<int> round-trip", () =>
         {
-            var original = new CollectionDto { Numbers = new List<int> { 1, 2, 3, 5, 8 } };
+            var original = new CollectionDto { Numbers = [1, 2, 3, 5, 8] };
             var dict = DictPack.Pack(original);
             var result = DictPack.Unpack<CollectionDto>(dict);
             return result.Numbers != null && result.Numbers.SequenceEqual(original.Numbers);
@@ -179,11 +179,11 @@ public partial class DictPackStressTest : Node
         {
             var original = new CollectionDto
             {
-                Items = new List<InnerDto>
-                {
+                Items =
+                [
                     new() { ItemId = "core:wood", StackSize = 16 },
                     new() { ItemId = "core:stone", StackSize = 32 }
-                }
+                ]
             };
 
             var dict = DictPack.Pack(original);
@@ -197,7 +197,7 @@ public partial class DictPackStressTest : Node
 
         Check("empty list survives as empty, not null", () =>
         {
-            var original = new CollectionDto { Numbers = new List<int>() };
+            var original = new CollectionDto { Numbers = [] };
             var dict = DictPack.Pack(original);
             var result = DictPack.Unpack<CollectionDto>(dict);
             // Note: DictPack currently skips null/empty checks on the *field*, not the elements,
@@ -241,7 +241,7 @@ public partial class DictPackStressTest : Node
 
         Check("Deserialize(empty dict) returns default instance", () =>
         {
-            var result = DictPack.Unpack<PrimitiveDto>(new Dictionary());
+            var result = DictPack.Unpack<PrimitiveDto>([]);
             return result != null && result.Name == null && result.Count == 0;
         });
 

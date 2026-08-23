@@ -11,6 +11,7 @@ public partial class Paintable : AbstractComponent<Placeable>
 	[Export] private Array<MeshInstance3D> _targetMeshes;
 
 	[Export]
+	[Packable]
 	public Color CurrentColor
 	{
 		get => _currentColor;

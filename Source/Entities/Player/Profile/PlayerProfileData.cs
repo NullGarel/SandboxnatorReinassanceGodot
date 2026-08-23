@@ -2,35 +2,29 @@ using Godot;
 using NullGarel.Util.Log;
 using NullGarel.Sandboxnator.Registry;
 using NullGarel.Util;
+using NullGarel.Util.GodotHelpers;
 
 namespace NullGarel.Sandboxnator.Entity;
 
 [GlobalClass]
 public partial class PlayerProfileData : Resource
 {
-    private string _playerName = "DEFAULT_PLAYER";
     [Export]
-    public string PlayerName
-    {
-        get => _playerName;
-        set => _playerName = value;
-    }
+    [Packable]
+    public string PlayerName { get; set; } = "DEFAULT_PLAYER";
 
     private Color _playerColor = Colors.White;
     [Export]
+    [Packable]
     public Color PlayerColor
     {
         get => _playerColor;
         set => _playerColor = value;
     }
-
-    private string _playerFaceId = "TinySmile";
+    
     [Export]
-    public string PlayerFaceId
-    {
-        get => _playerFaceId;
-        set => _playerFaceId = value;
-    }
+    [Packable]
+    public string PlayerFaceId { get; set; } = "TinySmile";
 
     public PlayerProfileData() { }
 

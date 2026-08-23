@@ -4,6 +4,7 @@ using NullGarel.Sandboxnator.Item;
 using NullGarel.Util.ComponentSystem;
 using System.Linq;
 using NullGarel.Util.GodotHelpers;
+using NullGarel.Sandboxnator.Data;
 namespace NullGarel.Sandboxnator.Placeables;
 
 public partial class Placeable : RigidBody3D
@@ -18,6 +19,7 @@ public partial class Placeable : RigidBody3D
     {
         QueryForInteractables();
         ComputeMaterialOverride();
+        GD.Print(Json.Stringify(Serialized()));
     }
 
     private void ComputeMaterialOverride()
@@ -45,4 +47,20 @@ public partial class Placeable : RigidBody3D
         QueueFree();
     }
 
+    public Dictionary Serialized()
+    {
+        var spawnData = new PlaceableSpawnData
+        {
+            ItemId = ItemData.ItemId,
+            Position = Position,
+            Rotation = Rotation
+        };
+
+        var dict = DictPack.Pack(spawnData);
+        dict["ComponentHolder"] = new Dictionary
+        {
+            ["Components"] = DictPackExtensions.SerializeComponents(componentHolder.GetAllComponents())
+        };
+        return dict;
+    }
 }
