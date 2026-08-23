@@ -219,6 +219,59 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_m4jd7")
 
+[sub_resource type="Animation" id="Animation_cpiep"]
+resource_name = "Flight"
+loop_mode = 1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node/Feet:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.99999994),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 50.19567, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node/Feet:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.39999998, 0.79999995),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.031, 0), Vector3(0, 0.031, 0), Vector3(0, 0.031, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node/Feet/left_F:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.39999998, 0.79999995),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(2.5, 1, 2.5), Vector3(2.5, 1, 2.5), Vector3(2.5, 1, 2.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.125, 0), Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_n3tmy"]
 resource_name = "IdleAndHold"
 loop_mode = 1
@@ -272,8 +325,60 @@ tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 
+[sub_resource type="Animation" id="Animation_fmj0q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node/Feet:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node/Feet:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.125, 0.03125, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node/Feet/left_F:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_8kkfx"]
 resource_name = "WalkAndHold"
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -340,7 +445,9 @@ tracks/8/keys = PackedFloat32Array(0, 1, 1, 1, 1)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2gltp"]
 _data = {
+&"Flight": SubResource("Animation_cpiep"),
 &"IdleAndHold": SubResource("Animation_n3tmy"),
+&"RESET": SubResource("Animation_fmj0q"),
 &"WalkAndHold": SubResource("Animation_8kkfx")
 }
 
@@ -354,7 +461,7 @@ faceMesh = NodePath("Node/HeadHolder/Face")
 [node name="Node" type="Node3D" parent="." unique_id=1099337142]
 
 [node name="HeadHolder" type="Node3D" parent="Node" unique_id=1079786309]
-transform = Transform3D(1.0813, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.682419, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6875, 0)
 
 [node name="Head" type="MeshInstance3D" parent="Node/HeadHolder" unique_id=1973350172]
 mesh = SubResource("ArrayMesh_r2ih7")
@@ -369,10 +476,10 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6875, 0)
 
 [node name="Hands" type="Node3D" parent="Node" unique_id=2020562525]
-transform = Transform3D(1, 0, 0, 0, 0.999451, 0.0331288, 0, -0.0331288, 0.999451, 0, 0.640038, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0.6875, 0)
 
 [node name="left_H" type="Node3D" parent="Node/Hands" unique_id=1246960259]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, -0.0625, 0)
+transform = Transform3D(1, 0, 0, 0, 0.49999967, 0.8660256, 0, -0.8660256, 0.49999967, -0.25, -0.0625, 0)
 
 [node name="Hand_L" type="MeshInstance3D" parent="Node/Hands/left_H" unique_id=1928297304]
 mesh = SubResource("ArrayMesh_147tt")
@@ -393,10 +500,10 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.
 transform = Transform3D(0.499936, -0.00689046, -0.00407397, 0.00680567, 0.499849, -0.0102567, 0.00421408, 0.0101999, 0.499878, 0, 0, 0)
 
 [node name="Feet" type="Node3D" parent="Node" unique_id=473667507]
-transform = Transform3D(1.00813, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.03125, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.03125, 0)
 
 [node name="left_F" type="Node3D" parent="Node/Feet" unique_id=631366176]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.40625, 0)
+transform = Transform3D(1, 0, 0, 0, 0.86602545, -0.4999999, 0, 0.4999999, 0.86602545, -0.25, 0.40625, 0)
 
 [node name="Foot_L" type="MeshInstance3D" parent="Node/Feet/left_F" unique_id=763105698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15625, 0)
@@ -404,7 +511,7 @@ mesh = SubResource("ArrayMesh_djg5b")
 skeleton = NodePath("")
 
 [node name="right_F" type="Node3D" parent="Node/Feet" unique_id=1612728249]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4375, 0)
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.4999999, 0, -0.4999999, 0.86602545, 0, 0.4375, 0)
 
 [node name="Foot_R" type="MeshInstance3D" parent="Node/Feet/right_F" unique_id=804914326]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1875, 0)

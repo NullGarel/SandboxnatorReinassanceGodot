@@ -12,6 +12,7 @@ public partial class PlayerItemUse : AbstractComponent<Player>
 	[Export] public Node3D hand;
 	[Export] public bool isUseValid = false;
 	[Export] public PlayerItemVisuals itemVisual;
+	[Export] private float _defaultRaycastReach = 6.5f;
 
 	// To be synced via MultiplayerSynchronizer
 	[Export]
@@ -119,7 +120,7 @@ public partial class PlayerItemUse : AbstractComponent<Player>
 		_item = item;
 		if (_item != null)
 		{
-			rayCast.TargetPosition = Vector3.Forward * _item.itemData.RaycastReach;
+			rayCast.TargetPosition = Vector3.Forward * _defaultRaycastReach * _item.itemData.RaycastReachMultiplier;
 		}
 	}
 

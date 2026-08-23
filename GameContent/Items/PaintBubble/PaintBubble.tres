@@ -10,4 +10,6 @@ ItemScene = ExtResource("2_yfovi")
 ItemId = "PaintBubble"
 ItemIcon = ExtResource("1_8iojf")
 ItemName = "Paint Bubble"
+RaycastReachMultiplier = 2.0
+UsageCooldown = 0.061
 metadata/_custom_type_script = "uid://dcb81xxw3xywm"

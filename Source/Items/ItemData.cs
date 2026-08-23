@@ -21,7 +21,7 @@ public partial class ItemData : Resource
     public bool IsStackable { get => MaxStackSize > 1; }
 
     [ExportCategory("Usage parameters")]
-    [Export] public float RaycastReach { get; private set; } = 4.125f;
+    [Export] public float RaycastReachMultiplier { get; private set; } = 1;
     [Export] public float UsageCooldown { get; private set; } = 0.125f;
 }
 

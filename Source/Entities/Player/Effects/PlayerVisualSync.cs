@@ -23,6 +23,8 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 	[Export] private AnimationPlayer _movementStateAnimation;
 	private const string IdleAnimation = "IdleAndHold";
 	private const string WalkAnimation = "WalkAndHold";
+	private const string FlightAnimation = "Flight";
+	private MovementState? _lastMovementState = null;
 
 	//Serialization
 	private PlayerProfileData _profileData = new();
@@ -71,20 +73,34 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 		{
 			target.GlobalRotation = _neck.GlobalRotation;
 		}
-		switch (_playerMovement.MovementType)
+
+		MovementState currentState = _playerMovement.MovementType;
+		if (_lastMovementState != currentState)
 		{
-			case MovementState.Idle:
-				_movementStateAnimation.CurrentAnimation = IdleAnimation;
-				break;
-
-			case MovementState.Walk:
-				_movementStateAnimation.CurrentAnimation = WalkAnimation;
-
-				break;
-			case MovementState.Sprint:
-				_movementStateAnimation.CurrentAnimation = WalkAnimation;
-				break;
+			ChangeMovementAnimation(currentState);
+			_lastMovementState = currentState;
 		}
+	}
+
+
+	private void ChangeMovementAnimation(MovementState newState)
+	{
+		if (_movementStateAnimation.HasAnimation("RESET"))
+		{
+			_movementStateAnimation.Play("RESET");
+			_movementStateAnimation.Advance(0); 
+		}
+
+		string targetAnimation = newState switch
+		{
+			MovementState.Idle => IdleAnimation,
+			MovementState.Walk => WalkAnimation,
+			MovementState.Sprint => WalkAnimation,
+			MovementState.Fly => FlightAnimation,
+			_ => IdleAnimation
+		};
+
+		_movementStateAnimation.Play(targetAnimation);
 	}
 
 	/// <summary>
@@ -112,5 +128,4 @@ public partial class PlayerVisualSync : AbstractComponent<Player>
 			_playerModel.UpdateVisual(profile);
 		}
 	}
-
 }
