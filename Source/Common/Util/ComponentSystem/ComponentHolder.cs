@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Godot;
 namespace NullGarel.Util.ComponentSystem;
 
@@ -9,7 +10,7 @@ namespace NullGarel.Util.ComponentSystem;
 [GodotClassName(nameof(ComponentHolder))]
 public partial class ComponentHolder : Node
 {
-    public int entityId;
+    public int EntityId { get; set; }
 
     public override void _EnterTree()
     {
@@ -28,6 +29,42 @@ public partial class ComponentHolder : Node
         foreach (Node child in GetChildren())
             if (child is T match)
                 return match;
+        return null;
+    }
+
+    public IEnumerable<IComponent> GetAllComponents()
+    {
+        foreach (Node child in GetChildren())
+            if (child is IComponent component)
+                yield return component;
+    }
+
+    public bool HasComponent<T>() where T : class, IComponent
+    {
+        foreach (Node child in GetChildren())
+            if (child is T)
+                return true;
+        return false;
+    }
+
+    public bool TryGetComponent<T>(out T component) where T : class, IComponent
+    {
+        component = GetComponent<T>();
+        return component != null;
+    }
+
+    public IEnumerable<T> GetComponents<T>() where T : class, IComponent
+    {
+        foreach (Node child in GetChildren())
+            if (child is T match)
+                yield return match;
+    }
+
+    public IComponent GetComponentByTypeName(string typeName)
+    {
+        foreach (Node child in GetChildren())
+            if (child is IComponent component && component.GetType().Name == typeName)
+                return component;
         return null;
     }
 }
