@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Godot;
 namespace NullGarel.Util.ComponentSystem;
 
@@ -29,6 +31,16 @@ public partial class ComponentHolder : Node
         foreach (Node child in GetChildren())
             if (child is T match)
                 return match;
+        return null;
+    }
+
+    public object GetComponent(Type t)
+    {
+        foreach (Node child in GetChildren())
+        {
+            if (t.IsInstanceOfType(child))
+                return child;
+        }
         return null;
     }
 

@@ -1,0 +1,2425 @@
+{
+	"Placeables": [
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 2.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 2.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 2.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 2.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 3.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 4.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 3.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 4.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 3.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 4.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 3.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 4.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(5.0, 1.0, -8.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(4.0, 1.0, -8.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(3.0, 1.0, -8.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(2.0, 1.0, -8.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.251, 0.251, 0.251, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "Cube",
+			"Position": "(1.0, 1.0, -8.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.6431, 0.4549, 0.2863, 1.0)"
+						},
+						"TypeName": "Paintable"
+					},
+					{
+						"Properties": {
+							"IsOpen": false
+						},
+						"TypeName": "Door"
+					}
+				]
+			},
+			"ItemId": "Door",
+			"Position": "(3.0, 2.0, -7.0)",
+			"Rotation": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 3.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 2.0, -3.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 2.0, -3.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 2.0, -3.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 2.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 2.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 2.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 2.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 2.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 2.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 3.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 3.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 3.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 4.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 4.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(1.0, 4.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 3.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 4.0, -6.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 3.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 4.0, -5.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(5.0, 4.0, -4.0)",
+			"Rotation": "(0.0, 1.570796, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(4.0, 3.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(3.0, 3.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(2.0, 3.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(2.0, 4.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(3.0, 4.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(0.7569, 0.6039, 0.4196, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "WindowFrame",
+			"Position": "(4.0, 4.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(0.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -2.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(6.0, 5.0, -8.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 6.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 6.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 6.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 6.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(5.0, 6.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 6.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 6.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 6.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 6.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 6.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 6.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 6.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(1.0, 6.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 6.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 6.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 6.0, -3.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 6.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 7.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 6.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 6.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 6.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 6.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 6.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 6.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 6.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 6.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 7.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 7.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 7.0, -6.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 7.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 7.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 7.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 7.0, -4.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 7.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 0.0, 0.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 8.0, -5.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 2.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 3.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(4.0, 4.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(3.0, 4.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 4.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 3.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		},
+		{
+			"ComponentHolder": {
+				"Components": [
+					{
+						"Properties": {
+							"CurrentColor": "(1.0, 1.0, 1.0, 1.0)"
+						},
+						"TypeName": "Paintable"
+					}
+				]
+			},
+			"ItemId": "SmoothCube",
+			"Position": "(2.0, 2.0, -7.0)",
+			"Rotation": "(0.0, 3.141593, 0.0)"
+		}
+	]
+}

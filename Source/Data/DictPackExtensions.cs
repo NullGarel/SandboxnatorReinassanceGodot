@@ -1,5 +1,9 @@
+// CLANKER GENERATED. POTENTIALLY SLOPPY CODE.
+// Generated: 202608232218
+// Agent/model: Claude (Sonnet 5, claude.ai)
 using Godot;
 using Godot.Collections;
+using NullGarel.Util.ComponentSystem;
 using NullGarel.Util.GodotHelpers;
 using System.Collections;
 using Array = Godot.Collections.Array;
@@ -32,22 +36,39 @@ public static class DictPackExtensions
         return arr;
     }
 
-    public static object DeserializeComponentEntry(Dictionary entry)
+    /// <summary>
+    /// Applies a saved component entry ({"TypeName", "Properties"}) onto the matching LIVE
+    /// component already attached to the given holder. Never constructs the component itself -
+    /// that has to happen through ComponentHolder's normal attach path so lifecycle/authority
+    /// setup still runs. If the holder has no live component of that type, this is a no-op
+    /// (with a warning) rather than a crash - a save file with a component the current build
+    /// doesn't spawn by default shouldn't take down the whole load.
+    /// </summary>
+    public static void HydrateComponent(ComponentHolder holder, Dictionary entry)
     {
-        if (!entry.TryGetValue("TypeName", out var typeNameVariant)) return null;
-
+        if (!entry.TryGetValue("TypeName", out var typeNameVariant)) return;
         string typeName = typeNameVariant.AsString();
+
         var type = ComponentRegistry.Resolve(typeName);
         if (type == null)
         {
             GD.PushWarning($"DictPack: unknown component TypeName '{typeName}', skipping.");
-            return null;
+            return;
+        }
+
+        // NOTE: assumes ComponentHolder exposes a way to fetch an already-attached component
+        // by its runtime Type. Adjust to whatever the real accessor is named/shaped as.
+        object component = holder.GetComponent(type);
+        if (component == null)
+        {
+            GD.PushWarning($"DictPack: no live '{typeName}' component on this placeable to hydrate, skipping.");
+            return;
         }
 
         var props = entry.TryGetValue("Properties", out var propsVariant)
             ? propsVariant.AsGodotDictionary()
-            : [];
+            : new Dictionary();
 
-        return DictPack.Unpack(props, type);
+        DictPack.Populate(component, props);
     }
 }

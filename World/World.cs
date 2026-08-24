@@ -50,16 +50,22 @@ public partial class World : Node3D
 		}
 	}
 
-	private Node SpawnPlaceable(Variant data)
+	public Node SpawnPlaceable(Variant data)
 	{
 		var spawnData = DictPack.Unpack<PlaceableSpawnData>((Dictionary)data);
+		return SpawnPlaceable(spawnData);
+	}
 
+
+	public Placeable SpawnPlaceable(PlaceableSpawnData spawnData)
+	{
 		PackedScene scene = GameRegistries.Instance.PlaceableRegistry.Get(spawnData.ItemId);
 		Placeable placeable = (Placeable)scene.Instantiate();
 
 		placeable.ItemData = (PlaceableItemData)GameRegistries.Instance.ItemRegistry.Get(spawnData.ItemId);
 		placeable.Position = spawnData.Position;
 		placeable.Rotation = spawnData.Rotation;
+		//TODO: make these unique persistently
 		placeable.Name = Guid.NewGuid().GetHashCode().ToString();
 
 		return placeable;
@@ -93,6 +99,19 @@ public partial class World : Node3D
 			}
 		}
 		return players;
+	}
+
+	public Array<Placeable> GetPlaceables()
+	{
+		Array<Placeable> placeable = [];
+		foreach (Node e in NetworkedEntities.GetChildren())
+		{
+			if (e is Placeable p)
+			{
+				placeable.Add(p);
+			}
+		}
+		return placeable;
 	}
 
 	public Player GetPlayerById(long id)

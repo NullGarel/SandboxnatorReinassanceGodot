@@ -19,7 +19,6 @@ public partial class Placeable : RigidBody3D
     {
         QueryForInteractables();
         ComputeMaterialOverride();
-        GD.Print(Json.Stringify(Serialized()));
     }
 
     private void ComputeMaterialOverride()

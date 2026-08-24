@@ -409,10 +409,12 @@ theme_override_constants/margin_bottom = 12
 [node name="MessagesContainer" type="RichTextLabel" parent="HUD/ChatRoot/ChatBox/VBoxContainer/MarginContainer" unique_id=412863184]
 layout_mode = 2
 size_flags_vertical = 3
+focus_mode = 2
 bbcode_enabled = true
 text = "
 "
 scroll_following = true
+selection_enabled = true
 
 [node name="Input" type="HBoxContainer" parent="HUD/ChatRoot/ChatBox/VBoxContainer" unique_id=1526908093]
 layout_mode = 2

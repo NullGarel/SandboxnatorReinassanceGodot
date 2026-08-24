@@ -49,7 +49,7 @@ public static class DictPack
 
         // GodotObject-derived types (Node, Resource, and everything that inherits from them,
         // which covers components) have a public surface area that's mostly Godot engine
-        // plumbing, not your data model - require explicit [Packable] opt-in for those. Plain
+        // plumbing, not your data model - require explicit [Packed] opt-in for those. Plain
         // POCO DTOs keep the original opt-out behavior: everything settable is included by
         // default, since that's the whole point of writing a small DTO by hand.
         if (typeof(GodotObject).IsAssignableFrom(type))
@@ -175,10 +175,21 @@ public static class DictPack
         return DeserializeObject(dict, type);
     }
 
-    private static object DeserializeObject(Dictionary dict, Type type)
+    /// <summary>
+    /// Applies a dict's values onto an ALREADY-EXISTING instance, instead of constructing a new
+    /// one. Use this for anything with real construction/lifecycle requirements that Activator
+    /// can't replicate - components attached via ComponentHolder being the prime example. Spawn
+    /// or construct the object the normal way first, then call this to hydrate saved values onto
+    /// it, rather than ever letting DictPack own construction for a live Node.
+    /// </summary>
+    public static void Populate(object instance, Dictionary dict)
     {
-        var instance = Activator.CreateInstance(type);
+        if (instance == null || dict == null) return;
+        PopulateObject(instance, dict, instance.GetType());
+    }
 
+    private static void PopulateObject(object instance, Dictionary dict, Type type)
+    {
         foreach (var prop in GetProperties(type))
         {
             if (!dict.TryGetValue(prop.Name, out var variant)) continue;
@@ -197,7 +208,12 @@ public static class DictPack
                 GD.PushWarning($"DictPack: failed to set '{prop.Name}' on '{type.Name}': {ex.Message}");
             }
         }
+    }
 
+    private static object DeserializeObject(Dictionary dict, Type type)
+    {
+        var instance = Activator.CreateInstance(type);
+        PopulateObject(instance, dict, type);
         return instance;
     }
 
