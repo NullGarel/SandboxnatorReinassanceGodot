@@ -6,8 +6,13 @@ public partial class Inventory : Node
 {
     public const int SlotCount = 32;
 
-    [Export]
-    private ItemStack[] _slots = new ItemStack[SlotCount];
+    private ItemStack[] _slots = [
+        new("Hammer", 1),
+        new("SmoothCube", 1),
+        new("PaintBubble", 1),
+        new("Door", 1),
+        new("Compass", 1),
+    ];
 
     public int Count => SlotCount;
 

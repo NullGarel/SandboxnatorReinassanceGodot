@@ -46,6 +46,7 @@ public partial class PlayerItemVisuals : AbstractComponent<Player>
 		_activeItemNode.Name = "EquippedItem";
 		_activeItemNode.ItemUser = _playerItemUse;
 		_playerItemUse.SetActiveItem(_activeItemNode);
+		_activeItemNode.ReceiveItemState(_playerItemSync.ActiveItemState);
 		_hand.AddChild(_activeItemNode);
 	}
 

@@ -118,6 +118,7 @@ public partial class PlayerItemSync : AbstractComponent<Player>
             return;
 
         CurrentItemId = stack.ItemId;
+        BroadcastItemState(stack.StackData);
 
         Rpc(nameof(ClientBoundConfirmItemChange), CurrentItemId);
     }
@@ -167,11 +168,34 @@ public partial class PlayerItemSync : AbstractComponent<Player>
     /// </summary>
     public void BroadcastItemState(Dictionary stateData)
     {
-        if (!Multiplayer.IsServer())
-            return;
+        if (!Multiplayer.IsServer()) return;
 
         ActiveItemState = stateData;
         Rpc(nameof(ClientBoundSyncItemState), stateData);
+    }
+
+    /// <summary>
+    /// causes the data to be "commited" to the inventory stack.
+    /// </summary>
+    public void PersistItemState(Dictionary stateData)
+    {
+        if (!Multiplayer.IsServer()) return;
+
+        var stack = CurrentItemStack;
+        if (stack == null) return;
+
+        foreach (var (key, value) in stateData)
+            stack.StackData[key] = value;
+    }
+
+    /// <summary>
+    /// sync the data to the inventory stack and then sync ephemerally to other players
+    /// </summary>
+    /// <param name="stateData"></param>
+    public void PersistAndBroadcast(Dictionary stateData)
+    {
+        PersistItemState(stateData);
+        BroadcastItemState(stateData);
     }
 
     [Rpc(MultiplayerApi.RpcMode.Authority, CallLocal = true)]

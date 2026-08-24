@@ -26,7 +26,6 @@
 [ext_resource type="Script" uid="uid://dqfl0pifo5c3e" path="res://Source/Items/Inventory.cs" id="19_2gtko"]
 [ext_resource type="AudioStream" uid="uid://cc75lx73p3qu8" path="res://_ThirdParty/KenneyImpactSounds/Audio/footstep_concrete_002.ogg" id="19_251ni"]
 [ext_resource type="AudioStream" uid="uid://dxpst4nlv02if" path="res://_ThirdParty/KenneyImpactSounds/Audio/footstep_concrete_003.ogg" id="20_f17go"]
-[ext_resource type="Script" uid="uid://cqlacl6xihu8w" path="res://Source/Items/ItemStack.cs" id="20_hnsoe"]
 [ext_resource type="AudioStream" uid="uid://c747vquocilw2" path="res://_ThirdParty/KenneyImpactSounds/Audio/footstep_concrete_004.ogg" id="21_2nyvo"]
 [ext_resource type="AudioStream" uid="uid://dsla1gjda3sih" path="res://_ThirdParty/KenneyImpactSounds/Audio/footstep_grass_000.ogg" id="22_2nyvo"]
 [ext_resource type="Script" uid="uid://c80ul7h2jy2em" path="res://Source/Entities/Player/Item/PlayerItemVisuals.cs" id="23_a7eri"]
@@ -182,54 +181,6 @@ _data = {
 &"HandUse": SubResource("Animation_qvcfc"),
 &"RESET": SubResource("Animation_6ei8r")
 }
-
-[sub_resource type="Resource" id="Resource_muqql"]
-script = ExtResource("20_hnsoe")
-ItemId = "Hammer"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_2gtko"]
-script = ExtResource("20_hnsoe")
-ItemId = "Compass"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_hnsoe"]
-script = ExtResource("20_hnsoe")
-ItemId = "Cube"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_ih3xf"]
-script = ExtResource("20_hnsoe")
-ItemId = "SmoothCube"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_kf3vh"]
-script = ExtResource("20_hnsoe")
-ItemId = "Door"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_7jdf5"]
-script = ExtResource("20_hnsoe")
-ItemId = "WindowFrame"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_ioi8w"]
-script = ExtResource("20_hnsoe")
-ItemId = "Cone"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
-
-[sub_resource type="Resource" id="Resource_dgm7t"]
-script = ExtResource("20_hnsoe")
-ItemId = "PaintBubble"
-Amount = 1
-metadata/_custom_type_script = "uid://cqlacl6xihu8w"
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_bglb2"]
 properties/0/path = NodePath(".:position")
@@ -594,7 +545,6 @@ CurrentItemId = "Hammer"
 
 [node name="Inventory" type="Node" parent="ComponentHolder/PlayerItemSync" unique_id=2028738247]
 script = ExtResource("19_2gtko")
-_slots = [SubResource("Resource_muqql"), SubResource("Resource_2gtko"), SubResource("Resource_hnsoe"), SubResource("Resource_ih3xf"), SubResource("Resource_kf3vh"), SubResource("Resource_7jdf5"), SubResource("Resource_ioi8w"), SubResource("Resource_dgm7t"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 metadata/_custom_type_script = "uid://dqfl0pifo5c3e"
 
 [node name="PlayerSounds" type="Node3D" parent="ComponentHolder" unique_id=1285901011 node_paths=PackedStringArray("_streamPlayer")]
