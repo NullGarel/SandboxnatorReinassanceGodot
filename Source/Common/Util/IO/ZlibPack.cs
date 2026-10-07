@@ -1,6 +1,7 @@
 using System.IO;
 using System.IO.Compression;
 
+namespace NullGarel.Util.IO;
 public static class ZlibPack
 {
     public static byte[] Pack(byte[] inputData)
