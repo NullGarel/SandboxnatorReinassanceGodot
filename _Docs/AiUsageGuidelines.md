@@ -8,7 +8,7 @@
     - no AI images/sprites/textures
     - no AI audio/music/sfx
     - no AI text dialogs
-  - Generate these .md documentations such as the one you're reading right now.
+  - Generate these .md documentations such as the one you're reading right now, these should be written by humans and reviewed by people made out of flesh and bones.
 - It is disencouraged, but allowed under certain conditions (such as prototyping and boilerplate) to:
   - Copy and paste AI generated code without modifying or thorouglhy checking as long as you include this crystal clear disclaimer at the top:
 
@@ -30,3 +30,4 @@
   - use the outputs of `code_extractor.py` to code review it
   - generate mockup data
   - structure data models and DTOs
+  - Ocasionally write commit messages (like when editing directly on github and then copilot shows up lol)
