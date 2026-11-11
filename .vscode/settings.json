@@ -1,10 +1,7 @@
 {
   //if the current system is ms windows
   //the one below is the actual active executable path, beware of this if your godotTools extension asks for executable path, i have included this in my settings.json and have chosen to not gitignore it in order to backup for ease of use.
-  "godotTools.editorPath.godot4": "/bin/godot-mono",
-  "windows.godotTools.editorPath.godot4": "c:\\Users\\gabri\\Desktop\\Godot_v4.5-stable_mono_win64\\Godot_v4.5-stable_mono_win64.exe",
-  //if the current system is gnu linux
-  "linux.editorPath.godot4": "/home/garel/ContainerGBO/_Apps/Godot_v4.4.1-stable_mono_linux_x86_64/Godot_v4.4.1-stable_mono_linux.x86_64",
+  "linux.editorPath.godot4": "/home/yok939/.local/bin/godot",
   "files.exclude": {
     "**/*.uid": true,
     "**/*.import": true,
