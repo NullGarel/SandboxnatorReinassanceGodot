@@ -6,4 +6,4 @@ Bin/
 _Python/DebugDoc.txt
 
 # Visual Studio Code ignores
-.vscode
+.vscode/
